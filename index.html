@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hoy es tu día de suerte</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+        <link rel="shortcut icon" href="/assets/shrek.ico" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Leisy, tengo un regalo para ti...</h1>
+            <button id="mostrarFlor" class="btn-flor"><i class="fas fa-hand-pointer"></i> ¿Qué será?</button>
+
+            <!-- Imagen de la flor amarilla -->
+            <img id="florAmarilla" src="/assets/yellow.gif" alt="Flor Amarilla" class="hidden flor-animada" />
+
+            <!-- Botones extra que aparecen después -->
+            <div id="extraButtons" class="hidden">
+                <button id="mostrarCarta" class="btn">📜 Soy una carta. Hazme click para leerme. 📜</button>
+            </div>
+        </div>
+
+        <!-- Modal para la carta -->
+        <div id="modalCarta" class="modal hidden">
+            <div class="modal-content">
+                <span class="close" id="closeCarta">&times;</span>
+                <img src="/assets/shrek-meme.jpg" alt="Imagen Especial" class="imagen-modal" />
+                <button id="mostrarImagen" class="btn">Y esto no es todo...</button>
+            </div>
+        </div>
+
+        <!-- Modal para la imagen especial -->
+        <div id="modalImagen" class="modal hidden">
+            <div class="modal-content">
+                <span class="close" id="closeImagen">&times;</span>
+                <p class="carta-texto">¡Felicidades! Acabar de ganar un</p>
+                <img src="/assets/cupon.png" alt="Imagen Especial" class="imagen-modal" />
+                <p class="carta-texto">¡Que suerte tienen los que no se bañan! 💖</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
